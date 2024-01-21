@@ -1,2 +1,1 @@
-# python_projects
-Learn and Implement Python
+Learn Python by exploring different algorithms and their implementation
