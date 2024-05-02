@@ -1,11 +1,11 @@
-'''See how close are two DNA sequence
+"""
+See how close are two DNA sequence
     add cost p if it is a chain
     add cost q for each base in a chain
     return p and q
     example s1 = CTAAAAGC t1 = CTGC => p =1 q=4
     example s1 = CATAGACA t1 = CTGC => p =4 q=4
-'''
-
+"""
 
 def sequencedistance( s1, t1):
 

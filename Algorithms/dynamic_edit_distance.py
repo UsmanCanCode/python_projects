@@ -74,6 +74,6 @@ def editdistanceloop(s1, t1):
 
 
 s1 = 'Horse'
-s2 = 'ros'
+s2 = 'Ros'
 
 print(editdistanceloop(s1,s2))
