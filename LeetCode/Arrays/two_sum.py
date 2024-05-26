@@ -19,6 +19,19 @@
 # Input: nums = [3,3], target = 6
 # Output: [0,1]
 
+def two_sum(nums: [int], target) -> [int]:
+    """
+    trying brute force
+    return index of the solution
+    """
+    for i in range(0, len(nums)):
+        for k in range(i+1, len(nums)):
+            if (nums[i] + nums[k]) == target:
+                return [i, k]
+
+    return []
+
+
 
 def istwosum(array: [int], target: int) -> [int]:
 

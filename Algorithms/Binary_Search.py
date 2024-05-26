@@ -12,11 +12,31 @@ def binarysearch(array, val, low, hi):
         return mid
 
 
+def searchbinary(array, target):
 
-arraylist= [1,2,4,5,6,7,8,8,8,9,9,9,9,9,9,10,11,12,13,14,15,16,17,18,19,20]
+    hi = len(array)-1
+    lo = 0
+    mid = int((hi+lo)/2)
+
+    while hi >= lo:
+        mid = int((lo + hi) / 2)
+        if array[mid] > target:
+            hi = mid-1
+        elif array[mid] < target:
+            lo = mid + 1
+        elif array[mid] == target:
+            return mid
+
+    return -1
+
+
+
+
+arraylist= [1,2,4,5,6,7,8,8,8,9,9,9,9,9,9,9,10,11,12,13,14,16,17,18,19]
 val = 10
 
-index = binarysearch(arraylist, val, 0, len(arraylist)-1)
+
+index = searchbinary(sorted(arraylist), val)
 
 print(index)
 print(arraylist[index])

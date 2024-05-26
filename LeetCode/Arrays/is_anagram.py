@@ -35,3 +35,17 @@ def is_anagram2(a: str, b: str) -> bool:
             B[l] = B.get(l, 0) + 1
 
     return A == B
+
+
+def is_anagram3(a: str, b: str) -> bool:
+    if len(a) != len(b):
+        return False
+
+    A: dict = {}
+    B: dict = {}
+    for l in a:
+        A[l] = A.get(l, 0) + 1
+    for l in b:
+        B[l] = B.get(l, 0) + 1
+
+    return A == B
